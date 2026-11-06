@@ -3,6 +3,15 @@ from random import randint
 import mons as mons
 import sd
 
+trader_items = {
+	"life_water" : {
+		"price" : 100
+	},
+	"life_tear" : {
+		"price" : 450
+	}
+}
+
 _pl_data = {}
 
 def init():
@@ -44,9 +53,19 @@ def text(t):
 
 
 def palakion():
-	while:
+	while(True):
 		text("1.Castle\n2.Trader\n3.Kazarms\n4.Menu\n")
 		x = int(input("x: "))
 
-
-init()
+		if(x == 1):
+			pass
+		if(x == 2):
+			while(True):
+				text("1.Buy items\n2.Buy equipment\n3.Sell items & equipment\n")
+				x = int(input("x: "))
+				if(x == 1):
+					ii = 1
+					for i in trader_items:
+						print(str(ii)+"."+str(i), trader_items[i]["price"], "rubies")
+						ii += 1
+palakion()

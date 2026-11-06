@@ -69,7 +69,7 @@ namespace UP02 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UP02;component/cborder.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UP02;V1.0.0.0;component/cborder.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\cborder.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\cborder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:cborder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -31,12 +35,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\Styles.xaml",
+              "RelativeDocumentMoniker": "Styles.xaml",
+              "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\Styles.xaml",
+              "RelativeToolTip": "Styles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-06T09:20:14.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "cborder.xaml.cs",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml.cs",
               "RelativeDocumentMoniker": "cborder.xaml.cs",
               "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml.cs",
               "RelativeToolTip": "cborder.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T05:47:34.195Z",
               "EditorCaption": ""
@@ -55,19 +71,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-03T05:44:02.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T05:44:02.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -75,8 +90,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T05:43:59.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T05:43:59.687Z"
             }
           ]
         }
