@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\cborder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:cborder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:cborder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|d:\\ip2023\\volusha\\up02\\dekstop\\up02\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -30,11 +34,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-06T09:34:17.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Styles.xaml",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\Styles.xaml",
               "RelativeDocumentMoniker": "Styles.xaml",
@@ -46,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "cborder.xaml.cs",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml.cs",
               "RelativeDocumentMoniker": "cborder.xaml.cs",
-              "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml.cs",
-              "RelativeToolTip": "cborder.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDEAAAAcAAAAAAAAAA==",
+              "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml.cs*",
+              "RelativeToolTip": "cborder.xaml.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T05:47:34.195Z",
               "EditorCaption": ""
@@ -63,15 +115,15 @@
               "Title": "cborder.xaml",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml",
               "RelativeDocumentMoniker": "cborder.xaml",
-              "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml",
-              "RelativeToolTip": "cborder.xaml",
+              "ToolTip": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\cborder.xaml*",
+              "RelativeToolTip": "cborder.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-11-03T05:47:26.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -82,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\IP2023\\Volusha\\UP02\\dekstop\\UP02\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
