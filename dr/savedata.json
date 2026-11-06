@@ -1,0 +1,20 @@
+{
+    "hpm": 100,
+    "hp": 100,
+    "def": 0,
+    "dam": 0,
+    "iceW": 0,
+    "waterW": 0,
+    "fireW": 0,
+    "thunderW": 0,
+    "rayW": 0,
+    "inv": {},
+    "helm": "",
+    "tors": "",
+    "legs": "",
+    "weapon": "",
+    "helm_id": 0,
+    "tors_id": 0,
+    "legs_id": 0,
+    "weapon_id": 0
+}
