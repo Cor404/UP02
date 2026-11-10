@@ -11,7 +11,43 @@
 	(object Attribute
 	    tool       	"Java"
 	    name       	"IDE"
-	    value      	"Internal Editor"))
+	    value      	"Internal Editor")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply3"
+	    value      	""))
     quid       	"6AE81C7F0340"
     enforceClosureAutoLoad 	FALSE
     defaults   	(object defaults
@@ -711,6 +747,7 @@
 					    strike     	FALSE
 					    color      	0
 					    default_color 	TRUE)
+					hidden     	TRUE
 					nlines     	2
 					max_width  	300
 					justify    	1
@@ -763,7 +800,7 @@
 				    supplier   	@24
 				    vertices   	(list Points
 					(334, 474)
-					(1032, 561))
+					(1022, 561))
 				    line_style 	0
 				    x_offset   	FALSE)
 				(object TransView "" @28
@@ -813,6 +850,7 @@
 					    strike     	FALSE
 					    color      	0
 					    default_color 	TRUE)
+					hidden     	TRUE
 					nlines     	2
 					max_width  	300
 					justify    	1
@@ -856,7 +894,7 @@
 				    supplier   	@10
 				    vertices   	(list Points
 					(2831, 1189)
-					(3102, 1200))
+					(3103, 1198))
 				    line_style 	0
 				    x_offset   	FALSE)
 				(object TransView "" @35
@@ -967,42 +1005,17 @@
 			    Parent_View 	@36
 			    location   	(170, 365)
 			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	351
+			    nlines     	2
+			    max_width  	325
 			    justify    	0
 			    label      	"Клиент")
 			icon       	"Actor"
 			icon_style 	"Icon"
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE8276002BB"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object UseCaseView "Use Case View::Продажа" @37
-			location   	(470, 1046)
-			font       	(object Font
-			    size       	10
-			    face       	"Consolas"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@37
-			    location   	(470, 1184)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Продажа")
-			icon_style 	"Icon"
-			line_color 	4227327
-			fill_color 	13434879
-			quidu      	"6AE82B8300FA"
-			height     	118)
-		    (object ClassView "Class" "Use Case View::Покупатель" @38
+		    (object ClassView "Class" "Use Case View::Покупатель" @37
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1018,20 +1031,20 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@38
+			    Parent_View 	@37
 			    location   	(170, 785)
 			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	355
+			    nlines     	2
+			    max_width  	325
 			    justify    	0
 			    label      	"Покупатель")
 			icon       	"Actor"
 			icon_style 	"Icon"
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE82BED02D2"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object InheritView "" @39
+		    (object InheritView "" @38
 			font       	(object Font
 			    size       	10
 			    face       	"Consolas"
@@ -1043,14 +1056,39 @@
 			    color      	0
 			    default_color 	TRUE)
 			stereotype 	TRUE
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE82C17006A"
-			client     	@38
+			client     	@37
 			supplier   	@36
 			vertices   	(list Points
 			    (170, 545)
 			    (170, 388))
 			line_style 	0)
+		    (object UseCaseView "Use Case View::Продажа" @39
+			location   	(470, 1046)
+			font       	(object Font
+			    size       	10
+			    face       	"Consolas"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@39
+			    location   	(470, 1184)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Продажа")
+			icon_style 	"Icon"
+			line_color 	33023
+			fill_color 	13434879
+			quidu      	"6AE82B8300FA"
+			height     	118)
 		    (object AssociationViewNew "Продукт" @40
 			location   	(352, 883)
 			font       	(object Font
@@ -1065,7 +1103,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @41
 			    Parent_View 	@40
-			    location   	(456, 847)
+			    location   	(473, 844)
 			    font       	(object Font
 				size       	10
 				face       	"Consolas"
@@ -1082,11 +1120,11 @@
 			    max_width  	450
 			    justify    	0
 			    label      	"Продукт"
-			    pctDist    	2.233333
-			    height     	37
+			    pctDist    	2.516667
+			    height     	39
 			    orientation 	0)
 			stereotype 	TRUE
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE8484C0291"
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$6" @42
@@ -1096,7 +1134,7 @@
 				line_color 	3342489
 				quidu      	"6AE8484D013A"
 				client     	@40
-				supplier   	@38
+				supplier   	@37
 				vertices   	(list Points
 				    (352, 883)
 				    (279, 781))
@@ -1108,12 +1146,37 @@
 				line_color 	3342489
 				quidu      	"6AE8484D013C"
 				client     	@40
-				supplier   	@37
+				supplier   	@39
 				vertices   	(list Points
 				    (352, 883)
 				    (426, 986))
 				line_style 	0)))
-		    (object ClassView "Class" "Use Case View::Изготовитель" @44
+		    (object UseCaseView "Use Case View::Изготовление продукта" @44
+			location   	(770, 625)
+			font       	(object Font
+			    size       	10
+			    face       	"Consolas"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@44
+			    location   	(770, 763)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Изготовление продукта")
+			icon_style 	"Icon"
+			line_color 	33023
+			fill_color 	13434879
+			quidu      	"6AE8486B00D9"
+			height     	118)
+		    (object ClassView "Class" "Use Case View::Изготовитель" @45
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1129,44 +1192,19 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@44
+			    Parent_View 	@45
 			    location   	(1070, 1206)
 			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	358
+			    nlines     	2
+			    max_width  	325
 			    justify    	0
 			    label      	"Изготовитель")
 			icon       	"Actor"
 			icon_style 	"Icon"
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE829D10343"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object UseCaseView "Use Case View::Изготовление продукта" @45
-			location   	(770, 625)
-			font       	(object Font
-			    size       	10
-			    face       	"Consolas"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@45
-			    location   	(770, 763)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Изготовление продукта")
-			icon_style 	"Icon"
-			line_color 	4227327
-			fill_color 	13434879
-			quidu      	"6AE8486B00D9"
-			height     	118)
 		    (object AssociationViewNew "$UNNAMED$8" @46
 			location   	(948, 876)
 			font       	(object Font
@@ -1180,7 +1218,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			stereotype 	TRUE
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE84886000A"
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$9" @47
@@ -1190,7 +1228,7 @@
 				line_color 	3342489
 				quidu      	"6AE84886027B"
 				client     	@46
-				supplier   	@45
+				supplier   	@44
 				vertices   	(list Points
 				    (948, 876)
 				    (883, 786))
@@ -1202,7 +1240,7 @@
 				line_color 	3342489
 				quidu      	"6AE84886027D"
 				client     	@46
-				supplier   	@44
+				supplier   	@45
 				vertices   	(list Points
 				    (948, 876)
 				    (1013, 966))
@@ -1219,10 +1257,10 @@
 			    color      	0
 			    default_color 	TRUE)
 			stereotype 	TRUE
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE848880350"
-			client     	@37
-			supplier   	@45
+			client     	@39
+			supplier   	@44
 			vertices   	(list Points
 			    (508, 986)
 			    (655, 786))
@@ -1231,7 +1269,7 @@
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(1370, 624)
+			location   	(1374, 640)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1244,19 +1282,29 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@50
-			    location   	(1370, 784)
+			    location   	(1374, 800)
 			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	365
+			    nlines     	2
+			    max_width  	325
 			    justify    	0
 			    label      	"Предприятие")
 			icon       	"Actor"
 			icon_style 	"Icon"
-			line_color 	3342489
+			line_color 	33023
 			quidu      	"6AE849F40154"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Use Case View::Закупщик" @51
+		    (object InheritView "" @51
+			stereotype 	TRUE
+			line_color 	33023
+			quidu      	"6AE84A17037D"
+			client     	@45
+			supplier   	@50
+			vertices   	(list Points
+			    (1126, 965)
+			    (1249, 808))
+			line_style 	0)
+		    (object ClassView "Class" "Use Case View::Закупщик" @52
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1272,79 +1320,30 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@51
+			    Parent_View 	@52
 			    location   	(1820, 1205)
 			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	361
+			    nlines     	2
+			    max_width  	325
 			    justify    	0
 			    label      	"Закупщик")
 			icon       	"Actor"
 			icon_style 	"Icon"
-			line_color 	3342489
+			line_color 	33023
 			quidu      	"6AE849B002DE"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object InheritView "" @52
-			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"6AE84A1102DC"
-			client     	@51
-			supplier   	@50
-			vertices   	(list Points
-			    (1760, 988)
-			    (1492, 739))
-			line_style 	0)
 		    (object InheritView "" @53
 			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"6AE84A17037D"
-			client     	@44
+			line_color 	33023
+			quidu      	"6AE84A1102DC"
+			client     	@52
 			supplier   	@50
 			vertices   	(list Points
-			    (1123, 966)
-			    (1247, 799))
+			    (1761, 991)
+			    (1498, 753))
 			line_style 	0)
-		    (object ClassView "Class" "Use Case View::Поставщик" @54
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(1820, 624)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@54
-			    location   	(1820, 784)
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	369
-			    justify    	0
-			    label      	"Поставщик")
-			icon       	"Actor"
-			icon_style 	"Icon"
-			line_color 	3342489
-			quidu      	"6AE84A2A0094"
-			annotation 	8
-			autoResize 	TRUE)
-		    (object UsesView "" @55
-			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"6AE84C310255"
-			client     	@51
-			supplier   	@54
-			vertices   	(list Points
-			    (1820, 965)
-			    (1820, 809))
-			line_style 	0)
-		    (object UseCaseView "Use Case View::Закупка материалов" @56
+		    (object UseCaseView "Use Case View::Закупка материалов" @54
 			location   	(1820, 205)
 			font       	(object Font
 			    size       	10
@@ -1357,7 +1356,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@56
+			    Parent_View 	@54
 			    location   	(1820, 343)
 			    anchor_loc 	1
 			    nlines     	2
@@ -1365,11 +1364,11 @@
 			    justify    	0
 			    label      	"Закупка материалов")
 			icon_style 	"Icon"
-			line_color 	4227327
+			line_color 	33023
 			fill_color 	13434879
 			quidu      	"6AE8266D0271"
 			height     	118)
-		    (object DependencyView "" @57
+		    (object DependencyView "" @55
 			font       	(object Font
 			    size       	10
 			    face       	"Consolas"
@@ -1380,8 +1379,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			stereotype 	(object SegLabel @58
-			    Parent_View 	@57
+			stereotype 	(object SegLabel @56
+			    Parent_View 	@55
 			    location   	(1209, 319)
 			    font       	(object Font
 				size       	10
@@ -1402,15 +1401,15 @@
 			    pctDist    	0.500000
 			    height     	120
 			    orientation 	0)
-			line_color 	4227327
+			line_color 	33023
 			quidu      	"6AE8488201A3"
-			client     	@45
-			supplier   	@56
+			client     	@44
+			supplier   	@54
 			vertices   	(list Points
 			    (878, 578)
 			    (1625, 282))
 			line_style 	0)
-		    (object AssociationViewNew "$UNNAMED$11" @59
+		    (object AssociationViewNew "$UNNAMED$11" @57
 			location   	(2082, 721)
 			font       	(object Font
 			    size       	10
@@ -1423,34 +1422,73 @@
 			    color      	0
 			    default_color 	TRUE)
 			stereotype 	TRUE
-			line_color 	3342489
+			line_color 	33023
 			quidu      	"6AE849BC0385"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$12" @60
-				Parent_View 	@59
+			    (object RoleView "$UNNAMED$12" @58
+				Parent_View 	@57
 				location   	(262, 140)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6AE849BF02D5"
-				client     	@59
-				supplier   	@56
+				client     	@57
+				supplier   	@54
 				vertices   	(list Points
 				    (2082, 721)
 				    (2120, 675)
 				    (1922, 366))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$13" @61
-				Parent_View 	@59
+			    (object RoleView "$UNNAMED$13" @59
+				Parent_View 	@57
 				location   	(262, 140)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6AE849BF02D7"
-				client     	@59
-				supplier   	@51
+				client     	@57
+				supplier   	@52
 				vertices   	(list Points
 				    (2082, 721)
 				    (1877, 969))
 				line_style 	0)))
+		    (object ClassView "Class" "Use Case View::Поставщик" @60
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1820, 624)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@60
+			    location   	(1820, 784)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Поставщик")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	33023
+			quidu      	"6AE84A2A0094"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object UsesView "" @61
+			stereotype 	TRUE
+			line_color 	33023
+			quidu      	"6AE84C310255"
+			client     	@52
+			supplier   	@60
+			vertices   	(list Points
+			    (1820, 965)
+			    (1820, 809))
+			line_style 	0)
 		    (object AssociationViewNew "$UNNAMED$17" @62
 			location   	(1820, 455)
 			font       	(object Font
@@ -1464,7 +1502,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			stereotype 	TRUE
-			line_color 	3342489
+			line_color 	33023
 			quidu      	"6AE84C42009F"
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$18" @63
@@ -1474,7 +1512,7 @@
 				line_color 	3342489
 				quidu      	"6AE84C420379"
 				client     	@62
-				supplier   	@56
+				supplier   	@54
 				vertices   	(list Points
 				    (1820, 455)
 				    (1820, 366))
@@ -1486,7 +1524,7 @@
 				line_color 	3342489
 				quidu      	"6AE84C420389"
 				client     	@62
-				supplier   	@54
+				supplier   	@60
 				vertices   	(list Points
 				    (1820, 455)
 				    (1820, 544))
