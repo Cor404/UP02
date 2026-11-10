@@ -11,6 +11,10 @@
   <ItemGroup>
     <None Remove="dinpro.otf" />
     <None Remove="dinpro_bold.otf" />
+    <None Remove="sounds\buttonclick.wav" />
+    <None Remove="sounds\buttonclickrelease.wav" />
+    <None Remove="sounds\buttonrollover.wav" />
+    <None Remove="sprites\bg.png" />
     <None Remove="trebuchetms.ttf" />
   </ItemGroup>
 
@@ -21,6 +25,16 @@
     <Resource Include="dinpro_bold.otf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Content Include="sounds\buttonclick.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\buttonclickrelease.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\buttonrollover.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="sprites\bg.png" />
     <Resource Include="trebuchetms.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("trebuchetms.ttf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sounds/buttonclick.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sounds/buttonclickrelease.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sounds/buttonrollover.wav")]
 
 

@@ -10,16 +10,4 @@
     <SolidColorBrush x:Key="hl_win2" Color="#889180"/>
     <SolidColorBrush x:Key="hl_win3" Color="#282E22"/>
     <SolidColorBrush x:Key="hl_win_text_sel" Color="#C4B550"/>
-
-    <Style x:Key="hl_win" TargetType="Window">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Window">
-                    <Grid>
-                        <Border
-                    </Grid>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
 </ResourceDictionary>

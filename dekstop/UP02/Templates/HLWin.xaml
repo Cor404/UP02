@@ -1,21 +1,24 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    x:Class="UP02"
+                    x:Class="UP02.Templates.HLWin"
+                    xmlns:local="clr-namespace:UP02"
                     >
-    <Style TargetType="Window">
+    <Style x:Key="HLWin" TargetType="{x:Type Window}">
+        <Setter Property="WindowStyle" Value="None"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="Window">
+                <ControlTemplate TargetType="{x:Type Window}">
+                    
                     <Grid>
 
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="200"/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
 
-                        <Border Background="{StaticResource hl_win1}"/>
-                        <Border BorderThickness="1,1,0,0" BorderBrush="{StaticResource hl_win2}"></Border>
-                        <Border BorderThickness="0,0,1,1" BorderBrush="{StaticResource hl_win3}"></Border>
+                        <Border Background="{StaticResource hl_win1}" Grid.RowSpan="2"/>
+                        <Border BorderThickness="1,1,0,0" BorderBrush="{StaticResource hl_win2}" Grid.RowSpan="2"></Border>
+                        <Border BorderThickness="0,0,1,1" BorderBrush="{StaticResource hl_win3}" Grid.RowSpan="2"></Border>
 
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -24,9 +27,9 @@
                                 <ColumnDefinition Width="auto"/>
                                 <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
-                            
-                            <
-                            
+
+                            <local:HLbgBtn Text="X" Width="80" Height="80"/>
+
                         </Grid>
                         
                     </Grid>
