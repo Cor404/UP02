@@ -9,5 +9,6 @@
     <SolidColorBrush x:Key="hl_win1" Color="#4C5844"/>
     <SolidColorBrush x:Key="hl_win2" Color="#889180"/>
     <SolidColorBrush x:Key="hl_win3" Color="#282E22"/>
+    <SolidColorBrush x:Key="hl_win4" Color="#3E4637"/>
     <SolidColorBrush x:Key="hl_win_text_sel" Color="#C4B550"/>
 </ResourceDictionary>

@@ -13,17 +13,16 @@ namespace UP02
     /// </summary>
     public partial class HLnobgbtn : UserControl
     {
-        Effect norm, sel;
         SoundPlayer enter, release;
 
-        private static readonly DependencyProperty TextProperty =
+        public static readonly DependencyProperty TextProperty =
         DependencyProperty.Register(
             "Text",
             typeof(string),
             typeof(HLnobgbtn),
             new PropertyMetadata(string.Empty));
 
-        private string Text
+        public string Text
         {
             get => (string)GetValue(TextProperty);
             set { SetValue(TextProperty, value); }
@@ -40,7 +39,7 @@ namespace UP02
             Effect sel = new DropShadowEffect() { Color = orange2_sel, BlurRadius = 20, Opacity = 1, ShadowDepth = 0 };
 
             enter = new SoundPlayer("sounds/buttonclick.wav");
-            release = new SoundPlayer("sounds/buttonclick.wav");
+            release = new SoundPlayer("sounds/buttonclickrelease.wav");
         }
 
         private void Border_MouseEnter(object sender, MouseEventArgs e)

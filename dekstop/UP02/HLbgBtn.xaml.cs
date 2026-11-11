@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace UP02
 {
@@ -13,7 +14,7 @@ namespace UP02
         DependencyProperty.Register(
             "Text",
             typeof(string),
-            typeof(HLnobgbtn),
+            typeof(HLbgBtn),
             new PropertyMetadata(string.Empty));
 
         public string Text
@@ -25,6 +26,22 @@ namespace UP02
         public HLbgBtn()
         {
             InitializeComponent();
+        }
+
+        private void Grid_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            brdBg.Background = (SolidColorBrush)FindResource("hl_win1");
+            brdDarkBorder.BorderThickness = new Thickness(0, 0, 1, 1);
+            brdLightBorder.BorderThickness = new Thickness(1, 1, 0, 0);
+            tblMain.Margin = new Thickness(6, 0, 0, 0);
+        }
+
+        private void Grid_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            brdBg.Background = (SolidColorBrush)FindResource("hl_win4");
+            brdDarkBorder.BorderThickness = new Thickness(1, 1, 0, 0);
+            brdLightBorder.BorderThickness = new Thickness(0, 0, 1, 1);
+            tblMain.Margin = new Thickness(8, 2, 0, 0);
         }
     }
 }

@@ -12,6 +12,14 @@ namespace UP02
             InitializeComponent();
             Users f = new Users();
             f.Show();
+
+            templ g = new templ();
+            g.Show();
+        }
+
+        private void HLnobgbtn_Exit_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

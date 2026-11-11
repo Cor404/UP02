@@ -15,6 +15,7 @@
     <None Remove="sounds\buttonclickrelease.wav" />
     <None Remove="sounds\buttonrollover.wav" />
     <None Remove="sprites\bg.png" />
+    <None Remove="sprites\logo.png" />
     <None Remove="trebuchetms.ttf" />
   </ItemGroup>
 
@@ -35,6 +36,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="sprites\bg.png" />
+    <Resource Include="sprites\logo.png" />
     <Resource Include="trebuchetms.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

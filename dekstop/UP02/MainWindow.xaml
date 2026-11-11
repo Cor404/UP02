@@ -12,7 +12,7 @@
         WindowStyle="None"
         >
     <Grid>
-        <Image Source="/sprites/bg.png"/>
+        <!--<Image Source="/sprites/bg.png"/>-->
         <Grid>
         <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -54,7 +54,7 @@
                 <local:HLnobgbtn Text="Курьеры" FontSize="20" Grid.Row="4" Margin="20,10,0,0"/>
                 <local:HLnobgbtn Text="Платежи" FontSize="20" Grid.Row="5" Margin="20,10,0,0"/>
                 <local:HLnobgbtn Text="Заявки" FontSize="20" Grid.Row="6" Margin="20,10,0,0"/>
-                <local:HLnobgbtn Text="Выход" FontSize="20" Grid.Row="7" Margin="20,10,0,0"/>
+                <local:HLnobgbtn MouseDown="HLnobgbtn_Exit_MouseDown" Text="Выход" FontSize="20" Grid.Row="7" Margin="20,10,0,0"/>
 
             </Grid>
         </Grid>
