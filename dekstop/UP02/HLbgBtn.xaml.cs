@@ -34,14 +34,16 @@ namespace UP02
             brdDarkBorder.BorderThickness = new Thickness(0, 0, 1, 1);
             brdLightBorder.BorderThickness = new Thickness(1, 1, 0, 0);
             tblMain.Margin = new Thickness(6, 0, 0, 0);
+            ((Grid)sender).ReleaseMouseCapture();
         }
 
         private void Grid_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            ((Grid)sender).CaptureMouse();
             brdBg.Background = (SolidColorBrush)FindResource("hl_win4");
             brdDarkBorder.BorderThickness = new Thickness(1, 1, 0, 0);
             brdLightBorder.BorderThickness = new Thickness(0, 0, 1, 1);
-            tblMain.Margin = new Thickness(8, 2, 0, 0);
+            tblMain.Margin = new Thickness(6, 2, 0, 0);
         }
     }
 }
