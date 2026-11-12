@@ -12,7 +12,7 @@
         WindowStyle="None"
         >
     <Grid>
-        <Image Source="/sprites/bg.png"/>
+        <!--<Image Source="/sprites/bg.png"/>-->
         <Grid>
         <Grid.ColumnDefinitions>
                 <ColumnDefinition/>

@@ -6,12 +6,10 @@
              xmlns:local="clr-namespace:UP02"
              mc:Ignorable="d" 
              d:DesignHeight="20" d:DesignWidth="100">
-    <Grid>
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Border Background="{StaticResource hl_win1}"/>
         <Border BorderThickness="1,1,0,0" BorderBrush="{StaticResource hl_win2}"></Border>
         <Border BorderThickness="0,0,1,1" BorderBrush="{StaticResource hl_win3}"></Border>
-        <ContentPresenter>
-            
-        </ContentPresenter>
+        <ContentPresenter Margin="1"/>
     </Grid>
 </UserControl>
