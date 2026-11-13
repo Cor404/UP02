@@ -23,5 +23,14 @@ namespace UP02
         {
             InitializeComponent();
         }
+        public override void OnApplyTemplate()
+        {
+            base.OnApplyTemplate();
+            HLbgBtn a = this.Template.FindName("btnCloseWindow", this) as HLbgBtn;
+            a.MouseLeftButtonUp += (s, e) =>
+            {
+                Close();
+            };
+        }
     }
 }

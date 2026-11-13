@@ -8,7 +8,7 @@
              d:DesignHeight="40" d:DesignWidth="50">
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Border x:Name="btnBg" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" MouseLeftButtonDown="btnBg_MouseLeftButtonDown" MouseLeftButtonUp="btnBg_MouseLeftButtonUp">
-            <TextBlock x:Name="btnTbl" Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}}" Foreground="{StaticResource hl_orange}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.6" FontFamily="Trebuchet MS" FontWeight="Bold" Margin="4" FontSize="{Binding FontSize, RelativeSource={RelativeSource AncestorType=UserControl}}">
+            <TextBlock x:Name="btnTbl" Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}}" Foreground="{StaticResource hl_orange}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.6" FontFamily="Trebuchet MS" Margin="4" FontSize="{Binding FontSize, RelativeSource={RelativeSource AncestorType=UserControl}}" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="Aliased">
                 <TextBlock.Effect>
                     <DropShadowEffect BlurRadius="20" Color="#FBA314" ShadowDepth="0" Opacity="0.9"/>
                 </TextBlock.Effect>

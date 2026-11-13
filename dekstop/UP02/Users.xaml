@@ -7,49 +7,33 @@
         xmlns:tmp="clr-namespace:UP02.Templates"
         mc:Ignorable="d"
         Style="{DynamicResource HLWin}"
-        Title="Пользователи" Height="450" Width="800">
+        Title="Пользователи" Height="450" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="0.45*"/>
         </Grid.ColumnDefinitions>
 
-        <local:HLBorder Margin="0,0,0,30">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="0.2*"/>
-                </Grid.RowDefinitions>
-
-                <ListView Style="{StaticResource HLlv}" Margin="10,20,10,20">
-                    <ListViewItem Style="{StaticResource HLlvi}">
-                        <Image Source="/sprites/logo.png" Width="100"/>
-                    </ListViewItem>
-                    <ListViewItem Style="{StaticResource HLlvi}">
-                        <Image Source="/sprites/logo.png" Width="100"/>
-                    </ListViewItem>
-                    <ListViewItem Style="{StaticResource HLlvi}">
-                        <Image Source="/sprites/logo.png" Width="100"/>
-                    </ListViewItem>
-                    <ListViewItem Style="{StaticResource HLlvi}">
-                        <Image Source="/sprites/logo.png" Width="100"/>
-                    </ListViewItem>
-                    <ListViewItem Style="{StaticResource HLlvi}">
-                        <Image Source="/sprites/logo.png" Width="100"/>
-                    </ListViewItem>
-                    <ListViewItem Style="{StaticResource HLlvi}">
-                        <Image Source="/sprites/logo.png" Width="100"/>
-                    </ListViewItem>
+            <ListView Style="{StaticResource HLlv}" Margin="10,20,10,20">
                 </ListView>
 
-                <Separator HorizontalAlignment="Stretch" Grid.Row="1" Height="1" Background="{StaticResource hl_win4}" Margin="8,0,8,0"/>
+        <Border Width="1" Grid.Column="1" VerticalAlignment="Stretch" Background="{StaticResource hl_win4}" Margin="0,2,0,2"/>
 
-                <local:HLbgBtn Text="Добавить" Grid.Column="0" Grid.Row="2" Margin="10"/>
-            </Grid>
-        </local:HLBorder>
+        <Grid Grid.Column="2" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <local:HLbgBtn Text="Добавить" Grid.Column="0" Grid.Row="0" Width="70" Margin="4"/>
+            <local:HLbgBtn Text="Изменить" Grid.Column="1" Grid.Row="0" Width="70" Margin="4"/>
+            <local:HLbgBtn Text="Удалить" Grid.Column="2" Grid.Row="2" Width="70" Margin="4"/>
+        </Grid>
+        
+
     </Grid>
 </Window>

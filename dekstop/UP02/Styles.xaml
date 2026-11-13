@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <SolidColorBrush x:Key="hl_orange" Color="#fb7e14"/>
-    <SolidColorBrush x:Key="hl_orange_sel" Color="#FBA314"/>
+    <SolidColorBrush x:Key="hl_orange_sel" Color="#F4C46B"/>
     <SolidColorBrush x:Key="hl_black" Color="#000000"/>
     <SolidColorBrush x:Key="hl_gray1" Color="#151515"/>
     <SolidColorBrush x:Key="hl_gray2" Color="#292929"/>

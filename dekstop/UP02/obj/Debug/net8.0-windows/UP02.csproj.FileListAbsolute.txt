@@ -86,3 +86,5 @@ H:\_WORK_Files\Учеба\УП02\dekstop\UP02\obj\Debug\net8.0-windows\UP02.cspr
 H:\_WORK_Files\Учеба\УП02\dekstop\UP02\obj\Debug\net8.0-windows\Templates\HLlvi.g.cs
 H:\_WORK_Files\Учеба\УП02\dekstop\UP02\obj\Debug\net8.0-windows\Templates\HLlvi.baml
 D:\IP2023\Volusha\UP02\dekstop\UP02\obj\Debug\net8.0-windows\Templates\Styles.baml
+D:\IP2023\Volusha\UP02\dekstop\UP02\obj\Debug\net8.0-windows\HLdialog.g.cs
+D:\IP2023\Volusha\UP02\dekstop\UP02\obj\Debug\net8.0-windows\HLdialog.baml

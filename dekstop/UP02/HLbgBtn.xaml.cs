@@ -10,6 +10,19 @@ namespace UP02
     public partial class HLbgBtn : UserControl
     {
 
+        public static readonly DependencyProperty BLProperty =
+        DependencyProperty.Register(
+            "BL",
+            typeof(bool),
+            typeof(HLbgBtn),
+            new PropertyMetadata(false));
+
+        public bool BL
+        {
+            get => (bool)GetValue(BLProperty);
+            set { SetValue(BLProperty, value); }
+        }
+
         public static readonly DependencyProperty TextProperty =
         DependencyProperty.Register(
             "Text",
@@ -23,6 +36,32 @@ namespace UP02
             set { SetValue(TextProperty, value); }
         }
 
+        public static readonly DependencyProperty WidthProperty =
+        DependencyProperty.Register(
+            "Width",
+            typeof(int),
+            typeof(HLbgBtn),
+            new PropertyMetadata(int.MinValue));
+
+        public int Width
+        {
+            get => (int)GetValue(WidthProperty);
+            set { SetValue(WidthProperty, value); }
+        }
+
+        public static readonly DependencyProperty HeightProperty =
+        DependencyProperty.Register(
+            "Height",
+            typeof(int),
+            typeof(HLbgBtn),
+            new PropertyMetadata(int.MinValue));
+
+        public int Height
+        {
+            get => (int)GetValue(HeightProperty);
+            set { SetValue(HeightProperty, value); }
+        }
+
         public HLbgBtn()
         {
             InitializeComponent();
@@ -31,8 +70,8 @@ namespace UP02
         private void Grid_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             brdBg.Background = (SolidColorBrush)FindResource("hl_win1");
-            brdDarkBorder.BorderThickness = new Thickness(0, 0, 1, 1);
-            brdLightBorder.BorderThickness = new Thickness(1, 1, 0, 0);
+            brdDarkBorder.BorderThickness = new Thickness(0, 0, 0.5, 0.5);
+            brdLightBorder.BorderThickness = new Thickness(0.5, 0.5, 0, 0);
             ((Grid)sender).ReleaseMouseCapture();
         }
 
@@ -40,8 +79,8 @@ namespace UP02
         {
             ((Grid)sender).CaptureMouse();
             brdBg.Background = (SolidColorBrush)FindResource("hl_win4");
-            brdDarkBorder.BorderThickness = new Thickness(1, 1, 0, 0);
-            brdLightBorder.BorderThickness = new Thickness(0, 0, 1, 1);
+            brdDarkBorder.BorderThickness = new Thickness(0.5, 0.5, 0, 0);
+            brdLightBorder.BorderThickness = new Thickness(0, 0, 0.5, 0.5);
         }
     }
 }

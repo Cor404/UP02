@@ -8,6 +8,9 @@
     <Compile Update="HLBorder.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="HLdialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="HLnobgbtn.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

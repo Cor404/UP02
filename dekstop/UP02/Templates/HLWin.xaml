@@ -36,10 +36,10 @@
                                 <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
 
-                            <Image Source="/sprites/logo.png" Margin="4" Width="22" Height="22"/>
+                            <Image Source="/sprites/logo.png" Margin="4" Width="28" Height="22"/>
                             <TextBlock Text="{TemplateBinding Title}" Margin="4,8,6,6" Grid.Column="1" Foreground="White" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display"/>
-                            <local:HLbgBtn x:Name="btnFullWindow" Text="𐄂" Width="22" Height="22" Grid.Column="2" Margin="2" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True"/>
-                            <local:HLbgBtn x:Name="btnMinWindow" Text="_" Width="22" Height="22" Grid.Column="3" Margin="2" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True"/>
+                            <local:HLbgBtn x:Name="btnFullWindow" Text="[]" Width="22" Height="22" Grid.Column="2" Margin="4" FontSize="12" WindowChrome.IsHitTestVisibleInChrome="True"/>
+                            <local:HLbgBtn x:Name="btnMinWindow" Text="__" Width="22" Height="22" Grid.Column="3" Margin="4" FontSize="12" WindowChrome.IsHitTestVisibleInChrome="True"/>
                             <local:HLbgBtn x:Name="btnCloseWindow" Text="✕" Width="22" Height="22" Grid.Column="4" Margin="4" FontSize="12" WindowChrome.IsHitTestVisibleInChrome="True"/>
 
                         </Grid>
