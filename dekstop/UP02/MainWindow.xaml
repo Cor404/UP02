@@ -57,7 +57,7 @@
                 <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="P R O - P L I T  &amp;  C o ™" Foreground="#fb7e14" FontWeight="Bold" FontSize="50" Opacity="0.6" Margin="20,160,20,0" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Grid.ColumnSpan="2">
+                <TextBlock Text="P R O - P L I T  C o ™" Foreground="#fb7e14" FontWeight="Bold" FontSize="50" Opacity="0.6" Margin="20,160,20,0" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Grid.ColumnSpan="2">
                 <TextBlock.Effect>
                     <DropShadowEffect BlurRadius="8" Color="#fb7e14" Opacity="0.8" ShadowDepth="0"/>
                 </TextBlock.Effect>
@@ -91,7 +91,7 @@
                     <local:HLnobgbtn Text="Склад" FontSize="18" Grid.Row="1" Margin="20,10,0,0"/>
                     <local:HLnobgbtn Text="Продажи" FontSize="18" Grid.Row="2" Margin="20,10,0,0"/>
                     <local:HLnobgbtn Text="Пользователи" FontSize="18" Grid.Row="3" Margin="20,10,0,0" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp_2"/>
-                    <local:HLnobgbtn MouseDown="HLnobgbtn_Exit_MouseDown" Text="Выход" FontSize="20" Grid.Row="4" Margin="20,10,0,0"/>
+                    <local:HLnobgbtn MouseDown="HLnobgbtn_Exit_MouseDown" Text="Выход" FontSize="18" Grid.Row="4" Margin="20,10,0,0"/>
 
                     <TextBlock Text="Меню и отчеты производства" Grid.Column="1" Grid.Row="0" Margin="20,10,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}"/>
                     <TextBlock Text="Количество и закупка материалов на склад" Grid.Column="1" Grid.Row="1" Margin="20,10,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}"/>

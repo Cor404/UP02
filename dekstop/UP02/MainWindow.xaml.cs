@@ -38,10 +38,6 @@ namespace UP02
             }
             else
             {
-                //this.Width = SystemParameters.WorkArea.Width;
-                //this.Height = SystemParameters.WorkArea.Height;
-                //this.Top = SystemParameters.WorkArea.Top; 
-                //this.Left = SystemParameters.WorkArea.Left;
                 this.WindowState = WindowState.Maximized;
             }
         }
