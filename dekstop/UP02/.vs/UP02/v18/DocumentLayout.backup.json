@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|h:\\_work_files\\\u0443\u0447\u0435\u0431\u0430\\\u0443\u043F02\\dekstop\\up02\\signinwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:signinwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|h:\\_work_files\\\u0443\u0447\u0435\u0431\u0430\\\u0443\u043F02\\dekstop\\up02\\templates\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{12BFCE36-8B8B-4737-90B2-EC2B3754E0A7}|UP02.csproj|solutionrelative:templates\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -115,6 +119,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SignInWindow.xaml",
+              "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\SignInWindow.xaml",
+              "RelativeDocumentMoniker": "SignInWindow.xaml",
+              "ToolTip": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\SignInWindow.xaml",
+              "RelativeToolTip": "SignInWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-16T13:35:24.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Styles.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Templates\\Styles.xaml",
               "RelativeDocumentMoniker": "Templates\\Styles.xaml",
@@ -126,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Styles.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Styles.xaml",
               "RelativeDocumentMoniker": "Styles.xaml",
@@ -138,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HLbgBtn.xaml.cs",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\HLbgBtn.xaml.cs",
               "RelativeDocumentMoniker": "HLbgBtn.xaml.cs",
@@ -146,12 +162,11 @@
               "RelativeToolTip": "HLbgBtn.xaml.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAmwDUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T16:45:09.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T16:45:09.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "HLbgBtn.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\HLbgBtn.xaml",
               "RelativeDocumentMoniker": "HLbgBtn.xaml",
@@ -163,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "HLnobgbtn.xaml.cs",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\HLnobgbtn.xaml.cs",
               "RelativeDocumentMoniker": "HLnobgbtn.xaml.cs",
@@ -175,19 +190,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Users.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Users.xaml",
               "RelativeDocumentMoniker": "Users.xaml",
               "ToolTip": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Users.xaml",
               "RelativeToolTip": "Users.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-10T16:09:15.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T16:09:15.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "HLWin.cs",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Templates\\HLWin.cs",
               "RelativeDocumentMoniker": "Templates\\HLWin.cs",
@@ -199,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "HLWin.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Templates\\HLWin.xaml",
               "RelativeDocumentMoniker": "Templates\\HLWin.xaml",
@@ -211,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -219,24 +233,22 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAIwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T13:29:06.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T13:29:06.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-10T13:29:06.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T13:29:06.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "HLlv.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Templates\\HLlv.xaml",
               "RelativeDocumentMoniker": "Templates\\HLlv.xaml",
@@ -247,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "HLlvi.xaml.cs",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\Templates\\HLlvi.xaml.cs",
               "RelativeDocumentMoniker": "Templates\\HLlvi.xaml.cs",
@@ -259,19 +271,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "HLnobgbtn.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\HLnobgbtn.xaml",
               "RelativeDocumentMoniker": "HLnobgbtn.xaml",
               "ToolTip": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\HLnobgbtn.xaml",
               "RelativeToolTip": "HLnobgbtn.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-10T16:34:16.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T16:34:16.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "App.xaml",
               "DocumentMoniker": "H:\\_WORK_Files\\\u0423\u0447\u0435\u0431\u0430\\\u0423\u041F02\\dekstop\\UP02\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",

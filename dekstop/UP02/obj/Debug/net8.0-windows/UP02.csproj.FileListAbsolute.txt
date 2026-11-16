@@ -92,3 +92,6 @@ D:\IP2023\Volusha\UP02\dekstop\UP02\obj\Debug\net8.0-windows\refint\UP02.dll
 D:\IP2023\Volusha\UP02\dekstop\UP02\obj\Debug\net8.0-windows\UP02.pdb
 D:\IP2023\Volusha\UP02\dekstop\UP02\obj\Debug\net8.0-windows\UP02.genruntimeconfig.cache
 D:\IP2023\Volusha\UP02\dekstop\UP02\obj\Debug\net8.0-windows\ref\UP02.dll
+H:\_WORK_Files\Учеба\УП02\dekstop\UP02\obj\Debug\net8.0-windows\Templates\HLcb.baml
+H:\_WORK_Files\Учеба\УП02\dekstop\UP02\obj\Debug\net8.0-windows\SignInWindow.g.cs
+H:\_WORK_Files\Учеба\УП02\dekstop\UP02\obj\Debug\net8.0-windows\SignInWindow.baml
