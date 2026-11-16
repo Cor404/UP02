@@ -11,8 +11,6 @@ namespace UP02
         public MainWindow()
         {
             InitializeComponent();
-            templ g = new templ();
-            g.Show();
         }
 
         private void HLnobgbtn_Exit_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)

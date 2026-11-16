@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="200" d:DesignWidth="130">
     <Grid>
-        <Border BorderBrush="{StaticResource hl_win2}" BorderThickness="0,0,1,1"/>
-        <Border BorderBrush="{StaticResource hl_win3}" BorderThickness="1,1,0,0"/>
+        <Border BorderBrush="{StaticResource hl_win2}" BorderThickness="0,0,0.5,0.5"/>
+        <Border BorderBrush="{StaticResource hl_win3}" BorderThickness="0.5,0.5,0,0"/>
         <ListView Background="{StaticResource hl_win4}" Margin="1" BorderThickness="0" ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Visible" HorizontalContentAlignment="Stretch">
             <ListView.Resources>
                 <Style TargetType="ScrollBar">

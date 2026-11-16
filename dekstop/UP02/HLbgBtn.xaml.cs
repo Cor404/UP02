@@ -20,7 +20,18 @@ namespace UP02
         public bool BL
         {
             get => (bool)GetValue(BLProperty);
-            set { SetValue(BLProperty, value); }
+            set { 
+                
+                SetValue(BLProperty, value);
+                if (value)
+                {
+                    brdBlck.BorderThickness = new Thickness(1);
+                }
+                else
+                {
+                    brdBlck.BorderThickness = new Thickness(1);
+                }
+            }
         }
 
         public static readonly DependencyProperty TextProperty =
@@ -72,6 +83,7 @@ namespace UP02
             brdBg.Background = (SolidColorBrush)FindResource("hl_win1");
             brdDarkBorder.BorderThickness = new Thickness(0, 0, 0.5, 0.5);
             brdLightBorder.BorderThickness = new Thickness(0.5, 0.5, 0, 0);
+            tblMain.Foreground = Brushes.White;
             ((Grid)sender).ReleaseMouseCapture();
         }
 
@@ -81,6 +93,7 @@ namespace UP02
             brdBg.Background = (SolidColorBrush)FindResource("hl_win4");
             brdDarkBorder.BorderThickness = new Thickness(0.5, 0.5, 0, 0);
             brdLightBorder.BorderThickness = new Thickness(0, 0, 0.5, 0.5);
+            tblMain.Foreground = (SolidColorBrush)FindResource("hl_win2");
         }
     }
 }

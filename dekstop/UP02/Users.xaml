@@ -7,12 +7,12 @@
         xmlns:tmp="clr-namespace:UP02.Templates"
         mc:Ignorable="d"
         Style="{DynamicResource HLWin}"
-        Title="Пользователи" Height="450" Width="600">
+        Title="Пользователи" MinHeight="450" Height="450" MinWidth="800" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="0.45*"/>
+            <ColumnDefinition Width="0.65*"/>
         </Grid.ColumnDefinitions>
 
             <ListView Style="{StaticResource HLlv}" Margin="10,20,10,20">
@@ -23,29 +23,60 @@
         <Grid Grid.Column="2" Margin="10,20,10,20">
 
             <Grid.RowDefinitions>
-                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-                <TextBox Style="{StaticResource HLtb}" Height="20" Margin="4"/>
+                <TextBlock Text="Имя&#x0a;пользователя" VerticalAlignment="Center" Margin="4" FontSize="12"/>
+
+                <TextBox Grid.Column="1" Style="{StaticResource HLtb}" Height="30" Margin="4"/>
+
+
+                <TextBlock Text="Права &#x0a;в системе" Margin="4" VerticalAlignment="Center" Grid.Row="1" FontSize="12"/>
+
+                <ComboBox Grid.Row="1" Grid.Column="1" Height="30" Margin="4" SelectedItem="2">
+                    <ComboBoxItem Content="Администратор"/>
+                    <ComboBoxItem Content="Менеджер"/>
+                    <ComboBoxItem Content="Пользователь"/>
+                </ComboBox>
+
+                
 
             </Grid>
-            
-            <Grid Grid.Row="1">
+
+            <Border Height="1" HorizontalAlignment="Stretch" Grid.Row="1" Background="{StaticResource hl_win4}" Margin="0, 10, 0, 10"/>
+
+            <Grid Grid.Row="2">
             <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <local:HLbgBtn Text="Добавить" Grid.Column="0" Grid.Row="0" Width="70" Margin="4"/>
-            <local:HLbgBtn Text="Изменить" Grid.Column="1" Grid.Row="0" Width="70" Margin="4"/>
-            <local:HLbgBtn Text="Удалить" Grid.Column="2" Grid.Row="2" Width="70" Margin="4"/>
-        </Grid>
+                
+                <local:HLbgBtn Text="Добавить" Grid.Column="0" Grid.Row="0" Width="90" Margin="4,0,20,40"/>
+                <TextBlock Text="Добавляет запись пользователя в базу данных, используя данные из полей выше." TextWrapping="WrapWithOverflow" FontSize="10" Grid.Row="0" Grid.Column="1" Foreground="{StaticResource hl_win2}"/>
+
+                <local:HLbgBtn Text="Изменить" Grid.Column="0" Grid.Row="1" Width="90" Margin="4,0,20,40"/>
+                <TextBlock Text="Изменяет существующие данные о пользователе из таблицы слева данными из полей выше." TextWrapping="WrapWithOverflow" FontSize="10" Grid.Row="1" Grid.Column="1" Foreground="{StaticResource hl_win2}"/>
+
+                <local:HLbgBtn Text="Удалить" Grid.Column="0" Grid.Row="2" Width="90" Margin="4,0,20,40"/>
+                <TextBlock Text="Изменяет существующие данные о пользователе из таблицы слева данными из полей выше." TextWrapping="WrapWithOverflow" FontSize="10" Grid.Row="2" Grid.Column="1" Foreground="{StaticResource hl_win2}"/>
+            </Grid>
         </Grid>
         
         

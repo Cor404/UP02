@@ -32,6 +32,23 @@ namespace UP02
             {
                 Close();
             };
+            a = this.Template.FindName("btnFullWindow", this) as HLbgBtn;
+            a.MouseLeftButtonUp += (s, e) =>
+            {
+                if (this.WindowState == WindowState.Maximized)
+                {
+                    this.WindowState = WindowState.Normal;
+                }
+                else
+                {
+                    this.WindowState = WindowState.Maximized;
+                }
+            };
+            a = this.Template.FindName("btnMinWindow", this) as HLbgBtn;
+            a.MouseLeftButtonUp += (s, e) =>
+            {
+                this.WindowState = WindowState.Minimized;
+            };
         }
     }
 }

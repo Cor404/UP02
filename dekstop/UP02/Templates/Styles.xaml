@@ -33,24 +33,23 @@
         <Setter Property="TextOptions.TextRenderingMode" Value="Aliased"/>
         <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
         <Setter Property="Foreground" Value="White"/>
+        <Setter Property="SelectionBrush" Value="{StaticResource hl_win_text_sel}"/>
+        <Setter Property="CaretBrush" Value="White"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Grid x:Name="grid" HorizontalAlignment="Stretch">
+                    <Grid x:Name="grid" HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
                         <Border x:Name="brd1" Background="{StaticResource hl_win4}"/>
                         <Border x:Name="brd2" BorderBrush="{StaticResource hl_win2}" BorderThickness="0,0,0.5,0.5"/>
                         <Border x:Name="brd3" BorderBrush="{StaticResource hl_win3}" BorderThickness="0.5,0.5,0,0"/>
-                        <Border Background="LightBlue" CornerRadius="3" Margin="5">
-                            <ScrollViewer x:Name="PART_ContentHost"
-                                              Margin="0"
-                                              Visibility="Visible">
-                                <InlineUIContainer>
-                                    <TextBlock Text="{Binding Text}"
-                                                       Foreground="Blue"
-                                                       Margin="5"/>
-                                </InlineUIContainer>
-                            </ScrollViewer>
-                        </Border>
+                        <ScrollViewer x:Name="PART_ContentHost"
+                                      Margin="0"
+                                      Visibility="Visible" 
+                                      HorizontalContentAlignment="Center" 
+                                      VerticalContentAlignment="Center"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Center">
+                        </ScrollViewer>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
