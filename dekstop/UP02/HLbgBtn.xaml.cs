@@ -20,18 +20,7 @@ namespace UP02
         public bool BL
         {
             get => (bool)GetValue(BLProperty);
-            set { 
-                
-                SetValue(BLProperty, value);
-                if (value)
-                {
-                    brdBlck.BorderThickness = new Thickness(1);
-                }
-                else
-                {
-                    brdBlck.BorderThickness = new Thickness(1);
-                }
-            }
+            set {SetValue(BLProperty, value);}
         }
 
         public static readonly DependencyProperty TextProperty =
@@ -76,6 +65,7 @@ namespace UP02
         public HLbgBtn()
         {
             InitializeComponent();
+            brdBlck.BorderThickness = new Thickness(1.2);
         }
 
         private void Grid_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -85,6 +75,7 @@ namespace UP02
             brdLightBorder.BorderThickness = new Thickness(0.5, 0.5, 0, 0);
             tblMain.Foreground = Brushes.White;
             ((Grid)sender).ReleaseMouseCapture();
+            MessageBox.Show(BL.ToString());
         }
 
         private void Grid_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)

@@ -10,8 +10,8 @@
         <Border x:Name="brdBlck" BorderThickness="0" BorderBrush="Black">
             <Grid>
                 <Border Name="brdBg" Background="{StaticResource hl_win1}"/>
-                <Border Name="brdLightBorder" BorderThickness="0.5,0.5,0,0" BorderBrush="{StaticResource hl_win2}"></Border>
-                <Border Name="brdDarkBorder" BorderThickness="0,0,0.5,0.5" BorderBrush="{StaticResource hl_win3}"></Border>
+                <Border Name="brdLightBorder" BorderThickness="0.5,0.5,0,0" BorderBrush="{StaticResource hl_win2}"/>
+                <Border Name="brdDarkBorder" BorderThickness="0,0,0.5,0.5" BorderBrush="{StaticResource hl_win3}"/>
             </Grid>
         </Border>
         <TextBlock Name="tblMain" Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}}" FontSize="{Binding FontSize, RelativeSource={RelativeSource AncestorType=UserControl}}" FontFamily="Trebuchet MS" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="Aliased" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="6,4,6,4" Foreground="White"/>
