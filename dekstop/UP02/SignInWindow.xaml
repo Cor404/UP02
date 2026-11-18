@@ -26,11 +26,11 @@
             <ColumnDefinition Width="0.15*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Text="Имя пользователя" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBox x:Name="tbName" Style="{StaticResource HLtb}" Grid.Row="1" Grid.Column="2" Height="30"/>
+        <TextBox x:Name="tbName" TabIndex="1" Style="{StaticResource HLtb}" Grid.Row="1" Grid.Column="2" Height="30" KeyDown="tbPass_KeyDown"/>
         
         <TextBlock Text="Пароль" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBox x:Name="tbPass" Style="{StaticResource HLtb}" Grid.Row="2" Grid.Column="2" Height="30"/>
+        <TextBox x:Name="tbPass" TabIndex="2" Style="{StaticResource HLtb}" Grid.Row="2" Grid.Column="2" Height="30" KeyDown="tbPass_KeyDown"/>
 
-        <local:HLbgBtn BL="False" Text="Войти" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="30" Width="70" Margin="14" MouseLeftButtonUp="HLbgBtn_MouseLeftButtonUp"/>
+        <local:HLbgBtn BL="True" Text="Войти" TabIndex="3" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="30" Width="70" Margin="14" MouseLeftButtonUp="HLbgBtn_MouseLeftButtonUp"/>
     </Grid>
 </Window>

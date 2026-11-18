@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,18 @@ namespace UP02
     /// </summary>
     public partial class Users : Window
     {
+        SQL c;
         public Users()
         {
             InitializeComponent();
+            c.TryConnect();
+            MySqlDataReader rd;
+            rd = c.Query("select * from users");
+            while (rd.Read())
+            {
+                ListViewItem i = new ListViewItem();
+                i.Style = (Style)FindResource("HLlvi");
+            }
         }
         public override void OnApplyTemplate()
         {

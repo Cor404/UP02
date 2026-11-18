@@ -12,9 +12,10 @@
         MinWidth="1195"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
+        BorderThickness="0"
         >
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="32" 
+        <WindowChrome CaptionHeight="40" 
       GlassFrameThickness="5" 
       CornerRadius="0"
       ResizeBorderThickness="4"/>
@@ -27,20 +28,20 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="32"/>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
             <Grid Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
                 </Grid.ColumnDefinitions>
-                <local:HLnobgbtn x:Name="winBtnMaximize" Grid.Column="1" Text="[]" Margin="2" FontSize="14" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="winBtnMaximize_MouseLeftButtonUp"/>
-                <local:HLnobgbtn x:Name="winBtnMinimize" Grid.Column="2" Text="__" Margin="2" FontSize="14" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp_1"/>
-                <local:HLnobgbtn x:Name="winBtnClose" Grid.Column="3" Text="✕" Margin="2" FontSize="14" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp"/>
+                <local:HLnobgbtn x:Name="winBtnMinimize" Grid.Column="1" Text="__" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp_1"/>
+                <local:HLnobgbtn x:Name="winBtnMaximize" Grid.Column="2" Text="[]" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="winBtnMaximize_MouseLeftButtonUp"/>
+                <local:HLnobgbtn x:Name="winBtnClose" Grid.Column="3" Text="✕" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp"/>
             </Grid>
             
         <Grid Grid.Row="1">
@@ -93,11 +94,11 @@
                     <local:HLnobgbtn Text="Пользователи" FontSize="18" Grid.Row="3" Margin="20,10,0,0" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp_2"/>
                     <local:HLnobgbtn MouseDown="HLnobgbtn_Exit_MouseDown" Text="Выход" FontSize="18" Grid.Row="4" Margin="20,10,0,0"/>
 
-                    <TextBlock Text="Меню и отчеты производства" Grid.Column="1" Grid.Row="0" Margin="20,10,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}"/>
-                    <TextBlock Text="Количество и закупка материалов на склад" Grid.Column="1" Grid.Row="1" Margin="20,10,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}"/>
-                    <TextBlock Text="Продажи продукции и отчетность" Grid.Column="1" Grid.Row="2" Margin="20,10,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}"/>
-                    <TextBlock Text="Список пользователей(только для администраторов)" Grid.Column="1" Margin="20,10,0,0" Grid.Row="3" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}"/>
-                    <TextBlock Text="...наверное..." Grid.Column="1" Grid.Row="4" Margin="20,10,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}"/>
+                    <TextBlock Text="Меню и отчеты производства" Grid.Column="1" Grid.Row="0" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
+                    <TextBlock Text="Количество и закупка материалов на склад" Grid.Column="1" Grid.Row="1" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
+                    <TextBlock Text="Продажи продукции и отчетность" Grid.Column="1" Grid.Row="2" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
+                    <TextBlock Text="Список пользователей(только для администраторов)" Grid.Column="1" Margin="20,20,0,0" Grid.Row="3" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
+                    <TextBlock Text="...наверное..." Grid.Column="1" Grid.Row="4" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
                     
                 </Grid>
             </Grid>

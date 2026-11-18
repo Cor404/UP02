@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>UP02</id>
+    <version>1.0.0</version>
+    <authors>UP02</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="520ed6d9ffa2e4bc4a6ca27776703506df9103f3" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net8.0-windows7.0/sounds/buttonclick.wav" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/sounds/buttonclickrelease.wav" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/sounds/buttonrollover.wav" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\bin\Debug\net8.0-windows\UP02.runtimeconfig.json" target="lib\net8.0-windows7.0\UP02.runtimeconfig.json" />
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\bin\Debug\net8.0-windows\UP02.dll" target="lib\net8.0-windows7.0\UP02.dll" />
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\sounds\buttonclick.wav" target="content\sounds\buttonclick.wav" />
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\sounds\buttonclick.wav" target="contentFiles\any\net8.0-windows7.0\sounds\buttonclick.wav" />
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\sounds\buttonclickrelease.wav" target="content\sounds\buttonclickrelease.wav" />
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\sounds\buttonclickrelease.wav" target="contentFiles\any\net8.0-windows7.0\sounds\buttonclickrelease.wav" />
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\sounds\buttonrollover.wav" target="content\sounds\buttonrollover.wav" />
+    <file src="D:\IP2023\Volusha\UP02\dekstop\UP02\sounds\buttonrollover.wav" target="contentFiles\any\net8.0-windows7.0\sounds\buttonrollover.wav" />
+  </files>
+</package>

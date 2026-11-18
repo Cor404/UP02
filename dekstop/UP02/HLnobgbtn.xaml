@@ -4,9 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UP02"
-             mc:Ignorable="d" 
-             d:DesignHeight="40" d:DesignWidth="50">
-    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+             mc:Ignorable="d">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
         <Border x:Name="btnBg" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" MouseLeftButtonDown="btnBg_MouseLeftButtonDown" MouseLeftButtonUp="btnBg_MouseLeftButtonUp">
             <TextBlock x:Name="btnTbl" Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}}" Foreground="{StaticResource hl_orange}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.6" FontFamily="Trebuchet MS" Margin="4" FontSize="{Binding FontSize, RelativeSource={RelativeSource AncestorType=UserControl}}" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="Aliased">
                 <TextBlock.Effect>

@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Styles.xaml"/>
                 <ResourceDictionary Source="/Templates/HLcb.xaml"/>
+                <ResourceDictionary Source="/Templates/HLprgbar.xaml"/>
                 <ResourceDictionary Source="/Templates/Styles.xaml"/>
                 <ResourceDictionary Source="/Templates/HLWin.xaml"/>
             </ResourceDictionary.MergedDictionaries>

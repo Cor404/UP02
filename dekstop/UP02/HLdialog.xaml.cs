@@ -19,9 +19,70 @@ namespace UP02
     /// </summary>
     public partial class HLdialog : Window
     {
-        public HLdialog()
+
+        public enum EnumResult
+        {
+            Yes,
+            No
+        }
+        public EnumResult Result = EnumResult.No;
+
+        public enum EnumMode 
+        {
+            YesNo,
+            OK
+        }
+
+        public EnumMode Mode = EnumMode.OK;
+
+        public HLdialog(string Text, EnumMode mode, string Title = "Сообщение")
         {
             InitializeComponent();
+            tblText.Text = Text;
+            this.Title = Title;
+            if (mode == EnumMode.OK)
+            {
+                btnNo.Opacity = 0;
+                btnYes.Opacity = 0;
+
+                btnOK.Focus();
+            }
+            else
+            {
+                btnOK.Opacity = 0;
+                btnNo.Focus();
+            }
+        }
+
+        public void Dispose()
+        {
+
+        }
+
+        public override void OnApplyTemplate()
+        {
+            base.OnApplyTemplate();
+            HLbgBtn a = this.Template.FindName("btnCloseWindow", this) as HLbgBtn;
+            a.MouseLeftButtonUp += (s, e) =>
+            {
+                Close();
+            };
+        }
+
+        private void btnYes_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Result = EnumResult.Yes;
+            Close();
+        }
+
+        private void btnNo_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Close();
+        }
+
+        private void btnOK_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Close();
         }
     }
 }

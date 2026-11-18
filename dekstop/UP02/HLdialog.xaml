@@ -7,44 +7,37 @@
         mc:Ignorable="d"
         Title="HLdialog" 
         Height="100" 
-        Width="300"
-        WindowStyle="None">
-    <WindowChrome.WindowChrome>
-        <WindowChrome GlassFrameThickness="0" CaptionHeight="32"/>
-    </WindowChrome.WindowChrome>
+        Width="320"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource HLWin_X}">
     <Grid>
-        
-        <Border x:Name="brd1" Background="{StaticResource hl_win1}"/>
-        <Border x:Name="brd2" BorderBrush="{StaticResource hl_win2}" BorderThickness="0.5,0.5,0,0"/>
-        <Border x:Name="brd3" BorderBrush="{StaticResource hl_win3}" BorderThickness="0,0,0.5,0.5"/>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="32"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--<Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="1" Margin="6,0,6,0"/>-->
+
+        <TextBlock x:Name="tblText" Text="Text" Grid.Row="2" Margin="6" TextWrapping="WrapWithOverflow"/>
+
+        <Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="3" Margin="6,0,6,0"/>
+
+        <Grid Grid.Row="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Window" Margin="6"/>
-
-            <Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="1" Margin="6,0,6,0"/>
-
-            <TextBlock Text="Text" Grid.Row="2" Margin="6"/>
-
-            <Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="3" Margin="6,0,6,0"/>
-
-            <Grid Grid.Row="4">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="auto"/>
-                </Grid.ColumnDefinitions>
-                <local:HLbgBtn Text="Да" Width="60" Grid.Column="1" Margin="6"/>
-                <local:HLbgBtn Text="Нет" Width="60" Grid.Column="2" Margin="6"/>
-            </Grid>
+            <local:HLbgBtn x:Name="btnYes" Text="Да" Width="60" Grid.Column="1" Margin="6" MouseLeftButtonUp="btnYes_MouseLeftButtonUp"/>
+            <local:HLbgBtn x:Name="btnNo" Text="Нет" Width="60" Grid.Column="2" Margin="6" MouseLeftButtonUp="btnNo_MouseLeftButtonUp"/>
+            <local:HLbgBtn x:Name="btnOK" Text="Ок" Width="60" Grid.Column="2" Margin="6" MouseLeftButtonUp="btnOK_MouseLeftButtonUp"/>
         </Grid>
     </Grid>
 </Window>

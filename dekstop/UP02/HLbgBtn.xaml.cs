@@ -1,5 +1,7 @@
 ﻿using System.Windows;
+using System.Windows.Automation.Peers;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace UP02
@@ -15,12 +17,26 @@ namespace UP02
             "BL",
             typeof(bool),
             typeof(HLbgBtn),
-            new PropertyMetadata(false));
+            new PropertyMetadata(false, onBLChanged));
 
         public bool BL
         {
             get => (bool)GetValue(BLProperty);
             set {SetValue(BLProperty, value);}
+        }
+
+        public static void onBLChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            HLbgBtn c = (HLbgBtn)d;
+            bool BL = (bool)e.NewValue;
+            if (BL)
+            {
+                c.brdBlck.BorderThickness = new Thickness(1.2);
+            }
+            else
+            {
+                c.brdBlck.BorderThickness = new Thickness(0);
+            }
         }
 
         public static readonly DependencyProperty TextProperty =
@@ -65,7 +81,7 @@ namespace UP02
         public HLbgBtn()
         {
             InitializeComponent();
-            brdBlck.BorderThickness = new Thickness(1.2);
+            brdBlck.BorderThickness = new Thickness(0);
         }
 
         private void Grid_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -75,7 +91,6 @@ namespace UP02
             brdLightBorder.BorderThickness = new Thickness(0.5, 0.5, 0, 0);
             tblMain.Foreground = Brushes.White;
             ((Grid)sender).ReleaseMouseCapture();
-            MessageBox.Show(BL.ToString());
         }
 
         private void Grid_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -85,6 +100,28 @@ namespace UP02
             brdDarkBorder.BorderThickness = new Thickness(0.5, 0.5, 0, 0);
             brdLightBorder.BorderThickness = new Thickness(0, 0, 0.5, 0.5);
             tblMain.Foreground = (SolidColorBrush)FindResource("hl_win2");
+        }
+
+        private void TriggerLeftMouseButtonUp(UIElement targetElement)
+        {
+            // Формируем аргументы события отпускания левой кнопки мыши
+            var args = new MouseButtonEventArgs(Mouse.PrimaryDevice, Environment.TickCount, MouseButton.Left)
+            {
+                RoutedEvent = UIElement.MouseLeftButtonUpEvent,
+                Source = targetElement
+            };
+
+            // Генерируем событие на нужном элементе (например, на вашем UserControl)
+            targetElement.RaiseEvent(args);
+        }
+
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            base.OnKeyDown(e);
+            if(e.Key == Key.Enter)
+            {
+                TriggerLeftMouseButtonUp(this);
+            }
         }
     }
 }
