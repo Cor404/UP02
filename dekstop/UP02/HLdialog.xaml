@@ -10,26 +10,31 @@
         Width="320"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        Style="{StaticResource HLWin_X}">
+        Style="{StaticResource HLWin_X}"
+        SizeToContent="Height">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
             <RowDefinition/>
             <RowDefinition Height="auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <!--<Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="1" Margin="6,0,6,0"/>-->
+        <Grid x:Name="gridMain" Margin="6">
+            <Border x:Name="brd1" Background="{StaticResource hl_win4}"/>
+            <Border x:Name="brd2" BorderBrush="{StaticResource hl_win2}" BorderThickness="0,0,0.5,0.5"/>
+            <Border x:Name="brd3" BorderBrush="{StaticResource hl_win3}" BorderThickness="0.5,0.5,0,0"/>
+        </Grid>
+        
 
-        <TextBlock x:Name="tblText" Text="Text" Grid.Row="2" Margin="6" TextWrapping="WrapWithOverflow"/>
+        <TextBlock x:Name="tblText" Text="Text" Grid.Row="0" Margin="8" TextWrapping="WrapWithOverflow"/>
 
-        <Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="3" Margin="6,0,6,0"/>
+        <Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="1" Margin="6,0,6,0"/>
 
-        <Grid Grid.Row="4">
+        <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="auto"/>

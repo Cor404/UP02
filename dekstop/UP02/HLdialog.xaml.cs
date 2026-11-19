@@ -38,6 +38,8 @@ namespace UP02
         public HLdialog(string Text, EnumMode mode, string Title = "Сообщение")
         {
             InitializeComponent();
+            MinHeight = Height + 20;
+            MinWidth = Width;
             tblText.Text = Text;
             this.Title = Title;
             if (mode == EnumMode.OK)
@@ -52,11 +54,6 @@ namespace UP02
                 btnOK.Opacity = 0;
                 btnNo.Focus();
             }
-        }
-
-        public void Dispose()
-        {
-
         }
 
         public override void OnApplyTemplate()

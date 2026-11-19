@@ -43,7 +43,8 @@ namespace UP02
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                HLdialog d = new HLdialog(ex.Message, HLdialog.EnumMode.OK, "Ошибка");
+                d.ShowDialog();
                 return false;
             }
             return true;
