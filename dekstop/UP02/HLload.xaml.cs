@@ -34,10 +34,10 @@ namespace UP02
         {
             tick++;
             if (prgMain.Value < 10) prgMain.Value += 2;
-            if (prgMain.Value < 20 && prgMain.Value >= 10) prgMain.Value += 2.5;
-            if (prgMain.Value < 22 && prgMain.Value >= 20) prgMain.Value += 0.1;
-            if (prgMain.Value < 60 && prgMain.Value >= 22) prgMain.Value += 2.5;
-            if (prgMain.Value < 100 && prgMain.Value >= 60) prgMain.Value += 1;
+            if (prgMain.Value < 20 && prgMain.Value >= 10) prgMain.Value += 4;
+            if (prgMain.Value < 22 && prgMain.Value >= 20) prgMain.Value += 0.5;
+            if (prgMain.Value < 60 && prgMain.Value >= 22) prgMain.Value += 5;
+            if (prgMain.Value < 100 && prgMain.Value >= 60) prgMain.Value += 20;
             if (prgMain.Value == 100) { ((DispatcherTimer)s).Stop(); this.Close(); }
         }
     }

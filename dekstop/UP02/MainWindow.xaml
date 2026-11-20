@@ -34,14 +34,16 @@
 
             <Grid Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="40"/>
                     <ColumnDefinition Width="40"/>
                     <ColumnDefinition Width="40"/>
                 </Grid.ColumnDefinitions>
-                <local:HLnobgbtn x:Name="winBtnMinimize" Grid.Column="1" Text="__" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp_1"/>
-                <local:HLnobgbtn x:Name="winBtnMaximize" Grid.Column="2" Text="[]" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="winBtnMaximize_MouseLeftButtonUp"/>
-                <local:HLnobgbtn x:Name="winBtnClose" Grid.Column="3" Text="✕" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp"/>
+                <TextBlock x:Name="tblUserRole" Text="" Foreground="{StaticResource hl_orange}" Margin="10,6,10,6" Opacity="0.4"/>
+                <local:HLnobgbtn x:Name="winBtnMinimize" Grid.Column="2" Text="__" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp_1"/>
+                <local:HLnobgbtn x:Name="winBtnMaximize" Grid.Column="3" Text="[]" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="winBtnMaximize_MouseLeftButtonUp"/>
+                <local:HLnobgbtn x:Name="winBtnClose" Grid.Column="4" Text="✕" Margin="0,6,0,6" HorizontalContentAlignment="Center" FontSize="16" WindowChrome.IsHitTestVisibleInChrome="True" MouseLeftButtonUp="HLnobgbtn_MouseLeftButtonUp"/>
             </Grid>
             
         <Grid Grid.Row="1">
@@ -60,7 +62,7 @@
 
                 <TextBlock Text="P R O - P L I T  C o ™" Foreground="#fb7e14" FontWeight="Bold" FontSize="50" Opacity="0.6" Margin="20,160,20,0" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Grid.ColumnSpan="2">
                 <TextBlock.Effect>
-                    <DropShadowEffect BlurRadius="8" Color="#fb7e14" Opacity="0.8" ShadowDepth="0"/>
+                    <DropShadowEffect BlurRadius="20" Color="#fb7e14" Opacity="0.8" ShadowDepth="0"/>
                 </TextBlock.Effect>
             </TextBlock>
                 <TextBlock Text="P L I T K A - S E R V I C E" Foreground="#B5590E" FontWeight="Bold" FontSize="18" Opacity="0.6" Margin="20,0,0,0" Grid.Row="1" Grid.ColumnSpan="2" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display">
@@ -68,7 +70,7 @@
                     <DropShadowEffect BlurRadius="8" Color="#B5590E" Opacity="0.8" ShadowDepth="0"/>
                 </TextBlock.Effect>
             </TextBlock>
-                <TextBlock Text="All rights reserved©" Foreground="#B5590E" FontSize="14" Opacity="0.6" Margin="10" Grid.Row="10" Grid.ColumnSpan="2" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display">
+                <TextBlock Text="ALL RIGHTS RESERVED©" Foreground="#B5590E" FontSize="14" Opacity="0.6" Margin="10" Grid.Row="10" Grid.ColumnSpan="2" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display">
                 <TextBlock.Effect>
                     <DropShadowEffect BlurRadius="8" Color="#B5590E" Opacity="0.8" ShadowDepth="0"/>
                 </TextBlock.Effect>
@@ -97,11 +99,18 @@
                     <TextBlock Text="Меню и отчеты производства" Grid.Column="1" Grid.Row="0" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
                     <TextBlock Text="Количество и закупка материалов на склад" Grid.Column="1" Grid.Row="1" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
                     <TextBlock Text="Продажи продукции и отчетность" Grid.Column="1" Grid.Row="2" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
-                    <TextBlock Text="Список пользователей(только для администраторов)" Grid.Column="1" Margin="20,20,0,0" Grid.Row="3" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
+                    <TextBlock Text="Список пользователей(только для доверенных пользователей)" Grid.Column="1" Margin="20,20,0,0" Grid.Row="3" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
                     <TextBlock Text="...наверное..." Grid.Column="1" Grid.Row="4" Margin="20,20,0,0" FontFamily="Trebuchet MS" TextOptions.TextRenderingMode="Aliased" TextOptions.TextFormattingMode="Display" Foreground="{StaticResource hl_win2}" Opacity="0.8"/>
                     
                 </Grid>
             </Grid>
         </Grid>
+        <Canvas>
+            <TextBlock Name="tblTime" Foreground="{StaticResource hl_orange}" Opacity="0.4" Canvas.Right="6" Canvas.Bottom="6">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="8" Color="#B5590E" Opacity="0.8" ShadowDepth="0"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </Canvas>
     </Grid>
 </Window>

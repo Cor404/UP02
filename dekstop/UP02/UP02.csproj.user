@@ -20,6 +20,9 @@
     <Compile Update="SignInWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="StorageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="templ.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

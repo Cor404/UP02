@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\IP2023\Volusha\UP02\dekstop\UP02\App.xaml
-151586831766
+16501718904
 31105700698
-181204528919
+19-59939483
 2061257816246
-HLbgBtn.xaml;HLBorder.xaml;HLdialog.xaml;HLload.xaml;HLnobgbtn.xaml;MainWindow.xaml;SignInWindow.xaml;Styles.xaml;templ.xaml;Templates\HLcb.xaml;Templates\HLlv.xaml;Templates\HLprgbar.xaml;Templates\HLWin.xaml;Templates\Styles.xaml;Users.xaml;
+HLbgBtn.xaml;HLBorder.xaml;HLdialog.xaml;HLload.xaml;HLnobgbtn.xaml;MainWindow.xaml;SignInWindow.xaml;StorageWindow.xaml;Styles.xaml;templ.xaml;Templates\HLcb.xaml;Templates\HLlv.xaml;Templates\HLprgbar.xaml;Templates\HLWin.xaml;Templates\Styles.xaml;Users.xaml;
 
 True
 

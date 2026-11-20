@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="HLdialog" 
         Height="100" 
-        Width="320"
+        Width="340"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Style="{StaticResource HLWin_X}"
@@ -16,7 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="32"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -30,7 +30,7 @@
         </Grid>
         
 
-        <TextBlock x:Name="tblText" Text="Text" Grid.Row="0" Margin="8" TextWrapping="WrapWithOverflow"/>
+        <TextBlock x:Name="tblText" Text="Text" Grid.Row="0" Margin="10" TextWrapping="WrapWithOverflow"/>
 
         <Border HorizontalAlignment="Stretch" Height="1" Background="{StaticResource hl_win4}" Grid.Row="1" Margin="6,0,6,0"/>
 

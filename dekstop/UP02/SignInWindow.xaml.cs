@@ -45,7 +45,7 @@ namespace UP02
             {
                 if (rd.GetString("uid") == tbName.Text && rd.GetString("pass") == tbPass.Text)
                 {
-                    MainWindow w = new MainWindow();
+                    MainWindow w = new MainWindow(rd.GetString("role"));
                     w.Show();
                     rd.Close();
                     this.Close();

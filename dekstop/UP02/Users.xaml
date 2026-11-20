@@ -15,8 +15,8 @@
             <ColumnDefinition Width="0.65*"/>
         </Grid.ColumnDefinitions>
 
-            <ListView Style="{StaticResource HLlv}" Margin="10,20,10,20">
-                </ListView>
+        <ListView x:Name="lvUsers" Style="{StaticResource HLlv}" Margin="10,20,10,20">
+        </ListView>
 
         <Border Width="0.5" Grid.Column="1" VerticalAlignment="Stretch" Background="{StaticResource hl_win4}" Margin="0,10,0,10"/>
 
@@ -32,6 +32,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.6*"/>
@@ -40,15 +41,18 @@
 
                 <TextBlock Text="Имя&#x0a;пользователя" VerticalAlignment="Center" Margin="4" FontSize="12"/>
 
-                <TextBox Grid.Column="1" Style="{StaticResource HLtb}" Height="30" Margin="4"/>
+                <TextBox x:Name="tbUserName" Grid.Column="1" Style="{StaticResource HLtb}" Height="30" Margin="4"/>
 
+                <TextBlock Text="Пароль&#x0a;пользователя" Grid.Row="1" VerticalAlignment="Center" Margin="4" FontSize="12"/>
 
-                <TextBlock Text="Права &#x0a;в системе" Margin="4" VerticalAlignment="Center" Grid.Row="1" FontSize="12"/>
+                <TextBox x:Name="tbUserPass" Grid.Row="1" Grid.Column="1" Style="{StaticResource HLtb}" Height="30" Margin="4"/>
 
-                <ComboBox Grid.Row="1" Grid.Column="1" Height="30" Margin="4" SelectedItem="2">
-                    <ComboBoxItem Content="Администратор"/>
-                    <ComboBoxItem Content="Менеджер"/>
+                <TextBlock Text="Права &#x0a;в системе" Margin="4" VerticalAlignment="Center" Grid.Row="2" FontSize="12"/>
+
+                <ComboBox Name="cbUserRole" Grid.Row="2" Grid.Column="1" Height="30" Margin="4" SelectedItem="2">
                     <ComboBoxItem Content="Пользователь"/>
+                    <ComboBoxItem Content="Менеджер"/>
+                    <ComboBoxItem Content="Администратор"/>
                 </ComboBox>
 
                 
@@ -68,13 +72,13 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
                 
-                <local:HLbgBtn Text="Добавить" Grid.Column="0" Grid.Row="0" Width="90" Margin="4,0,20,40"/>
+                <local:HLbgBtn x:Name="btnUserAdd" Text="Добавить" Grid.Column="0" Grid.Row="0" Width="90" Margin="4,0,20,40" MouseLeftButtonUp="btnUserAdd_MouseLeftButtonUp"/>
                 <TextBlock Text="Добавляет запись пользователя в базу данных, используя данные из полей выше." TextWrapping="WrapWithOverflow" FontSize="10" Grid.Row="0" Grid.Column="1" Foreground="{StaticResource hl_win2}"/>
 
-                <local:HLbgBtn Text="Изменить" Grid.Column="0" Grid.Row="1" Width="90" Margin="4,0,20,40"/>
+                <local:HLbgBtn x:Name="btnUserChange" Text="Изменить" Grid.Column="0" Grid.Row="1" Width="90" Margin="4,0,20,40"/>
                 <TextBlock Text="Изменяет существующие данные о пользователе из таблицы слева данными из полей выше." TextWrapping="WrapWithOverflow" FontSize="10" Grid.Row="1" Grid.Column="1" Foreground="{StaticResource hl_win2}"/>
 
-                <local:HLbgBtn Text="Удалить" Grid.Column="0" Grid.Row="2" Width="90" Margin="4,0,20,40"/>
+                <local:HLbgBtn x:Name="btnUserDelete" Text="Удалить" Grid.Column="0" Grid.Row="2" Width="90" Margin="4,0,20,40"/>
                 <TextBlock Text="Изменяет существующие данные о пользователе из таблицы слева данными из полей выше." TextWrapping="WrapWithOverflow" FontSize="10" Grid.Row="2" Grid.Column="1" Foreground="{StaticResource hl_win2}"/>
             </Grid>
         </Grid>

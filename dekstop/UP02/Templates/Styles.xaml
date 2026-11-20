@@ -12,11 +12,50 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListViewItem}">
-                    <Grid x:Name="grid" HorizontalAlignment="Stretch">
+                    <Grid x:Name="grid">
                         <Border x:Name="brd1" Background="{StaticResource hl_win1}"/>
                         <Border x:Name="brd2" BorderBrush="{StaticResource hl_win2}" BorderThickness="0.5,0.5,0,0"/>
                         <Border x:Name="brd3" BorderBrush="{StaticResource hl_win3}" BorderThickness="0,0,0.5,0.5"/>
-                        <ContentPresenter x:Name="cn" Margin="1"/>
+                        <ContentPresenter x:Name="cp" Margin="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" TargetName="brd1" Value="{StaticResource hl_win2}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="HLlvi_user" TargetType="{x:Type ListViewItem}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListViewItem}">
+                    <Grid x:Name="grid">
+                        <Border x:Name="brd1" Background="{StaticResource hl_win1}"/>
+                        <Border x:Name="brd2" BorderBrush="{StaticResource hl_win2}" BorderThickness="0.5,0.5,0,0"/>
+                        <Border x:Name="brd3" BorderBrush="{StaticResource hl_win3}" BorderThickness="0,0,0.5,0.5"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock x:Name="tbUserUid" Grid.Column="0" Margin="4"/>
+
+                            <Border VerticalAlignment="Stretch" Grid.Column="1" Width="1" Background="{StaticResource hl_win4}"/>
+                            
+                            <TextBlock x:Name="tbUserPass" Grid.Column="2" Margin="4"/>
+
+                            <Border VerticalAlignment="Stretch" Grid.Column="3" Width="1" Background="{StaticResource hl_win4}"/>
+                            
+                            <TextBlock x:Name="tbUserRole" Grid.Column="4" Margin="4"/>
+
+                        </Grid>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsSelected" Value="True">
@@ -130,7 +169,7 @@
                     <Grid HorizontalAlignment="Stretch">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="auto"/>
                         </Grid.ColumnDefinitions>
                         <Border Background="{StaticResource hl_win4}" Grid.ColumnSpan="2"/>
                         <Border BorderBrush="{StaticResource hl_win2}" BorderThickness="0,0,0.5,0.5" Grid.ColumnSpan="2"/>
@@ -144,7 +183,7 @@
                                                 <Grid>
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition/>
-                                                        <ColumnDefinition Width="20"/>
+                                                        <ColumnDefinition Width="auto"/>
                                                     </Grid.ColumnDefinitions>
                                                     <ScrollContentPresenter Margin="1,1,0,1" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                                                     <ScrollBar x:Name="PART_VerticalScrollBar" Grid.Column="1" Style="{StaticResource sbVert}" Orientation="Vertical"
